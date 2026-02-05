@@ -1,6 +1,5 @@
-import java.util.*;
 
-public class Queues {
+public class QueueImplementations {
 
     /* 
         Following are the mutliple ways to implement Queue
@@ -328,30 +327,8 @@ public class Queues {
     //     }
     // }
 
-    // Q. First non repeting charachter
-    public static void Solution(String s) {
-        int sCount[] = new int[26];
-        Queue<Character> q = new LinkedList<>();
-
-        for(char c : s.toCharArray()) {
-            sCount[c-'a']++;
-            q.add(c);
-            
-            while(!q.isEmpty()) {
-                if(sCount[q.peek()-'a'] <= 1) {
-                    System.out.println(q.peek());
-                    break;
-                } else q.remove();
-            }
-            if(q.isEmpty()) System.out.println(-1);
-        }
-
-    }
-
 
     public static void main(String args[]) {
-        
-        String s = "aabccxb";
-        Solution(s);
+
     }
 }
