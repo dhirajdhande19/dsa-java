@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class GraphsQue {
-            static  class  Edge {
+    static  class  Edge {
         int str;
         int des;
         int wt;
